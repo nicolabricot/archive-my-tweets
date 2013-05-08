@@ -39,7 +39,8 @@
 
 	<div class="footer" id="footer">
 		<div class="container">
-			<p><a href="http://amwhalen.com/projects/archive-my-tweets/">Archive My Tweets</a> by <a href="http://amwhalen.com">Andrew M. Whalen</a> and modified by <a href="//github.com/nicolabricot">nicolabricot</a>.</p>
+			<p>Powered by <a href="https://github.com/nicolabricot/archive-my-tweets">Archive My Tweets</a>.
+			<br />Initially from <a href="http://amwhalen.com">Andrew M. Whalen</a> and modified by <a href="https://twitter.com/nicolabricot">@nicolabricot</a>.</p>
 		</div><!-- /.container -->
 	</div><!-- /.footer -->
 
