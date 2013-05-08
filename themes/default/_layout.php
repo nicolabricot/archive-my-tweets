@@ -4,11 +4,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>@<?php echo $config['twitter']['username']; ?> - <?php echo $config['twitter']['name']; ?> - Tweets</title>
-	<link href="<?php echo $config['system']['baseUrl']; ?>css/archive.css" rel="stylesheet">
 	<link href="<?php echo $config['system']['baseUrl']; ?>assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="<?php echo $config['system']['baseUrl']; ?>css/archive.css" rel="stylesheet">
 	<!--[if lt IE 9]>
 		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+	<link href="https://si0.twimg.com/favicons/favicon.ico" rel="shortcut icon" type="image/x-icon">
 </head>
 <body class="amt-<?php echo $pageType; ?>">
 
@@ -19,8 +20,7 @@
 				<ul id="primary-nav" class="nav">
 					<li><a class="brand" href="<?php echo $config['system']['baseUrl']; ?>">@<?php echo $config['twitter']['username']; ?></a></li>
 				</ul>
-				<ul id="search-nav" class="nav pull-right">
-					<!--<li><a href="<?php echo $config['system']['baseUrl']; ?>stats">Stats</a></li>-->
+				<ul id="search-nav" class="nav pull-right hidden-mobile">
 					<form action="<?php echo $config['system']['baseUrl']; ?>" class="navbar-search pull-right" method="get">
 						<input type="text" size="20" name="q" value="<?php echo ($search) ? htmlentities($searchTerm) : ''; ?>" class="span3 search-query" placeholder="Search my tweets" />
 					</form>
@@ -39,7 +39,7 @@
 
 	<div class="footer" id="footer">
 		<div class="container">
-			<p><a href="http://amwhalen.com/projects/archive-my-tweets/">Archive My Tweets</a> by <a href="http://amwhalen.com">Andrew M. Whalen</a>.</p>
+			<p><a href="http://amwhalen.com/projects/archive-my-tweets/">Archive My Tweets</a> by <a href="http://amwhalen.com">Andrew M. Whalen</a> and modified by <a href="//github.com/nicolabricot">nicolabricot</a>.</p>
 		</div><!-- /.container -->
 	</div><!-- /.footer -->
 

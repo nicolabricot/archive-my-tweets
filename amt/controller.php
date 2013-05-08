@@ -101,7 +101,7 @@ class Controller {
 			$this->data['all_tweets'] = true;
 			$this->data['tweets'] = $this->model->getTweets($offset, $perPage);
 			$this->data['pagination'] = $this->paginator->paginate($this->data['config']['system']['baseUrl'], $this->data['totalTweets'], $current_page, $perPage);
-			$this->data['header'] = ($offset != 0) ? 'Recent Tweets <small>Page '.$current_page.'</small>' : 'Recent Tweets';
+			$this->data['header'] = ($offset != 0) ? 'All Tweets <small>Page '.$current_page.'</small>' : 'All Tweets';
 		
 		}
 
