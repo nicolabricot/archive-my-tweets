@@ -20,7 +20,7 @@
 				<ul id="primary-nav" class="nav">
 					<li><a class="brand" href="<?php echo $config['system']['baseUrl']; ?>">@<?php echo $config['twitter']['username']; ?></a></li>
 				</ul>
-				<ul id="search-nav" class="nav pull-right hidden-mobile">
+				<ul id="search-nav hidden-phone" class="nav pull-right hidden-mobile">
 					<form action="<?php echo $config['system']['baseUrl']; ?>" class="navbar-search pull-right" method="get">
 						<input type="text" size="20" name="q" value="<?php echo ($search) ? htmlentities($searchTerm) : ''; ?>" class="span3 search-query" placeholder="Search my tweets" />
 					</form>
