@@ -3,18 +3,29 @@
 
 body {
 	padding-top: 60px;
-	background: #eee !important;
+	background: #fff url(../img/bg.png) repeat fixed !important;
+}
+
+.navbar-inner {
+	background-color: #2c2c2c !important;
+	background-image: -moz-linear-gradient(top, #333333, #222222) !important;
+	background-image: -ms-linear-gradient(top, #333333, #222222) !important;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#222222)) !important;
+	background-image: -webkit-linear-gradient(top, #333333, #222222) !important;
+	background-image: -o-linear-gradient(top, #333333, #222222) !important;
+	background-image: linear-gradient(top, #333333, #222222) !important;
+	background-repeat: repeat-x;
 }
 
 .navbar .avatar {
-	margin: 4px 10px 0 10px;
-	padding: 4px 2px;
+	margin: 4px 10px 0 15px !important;
+	padding: 4px 8px !important;
 	width: 25px;
 	height: 20px;
 }
 
 .navbar a.brand {
-	color: #efefef; 
+	color: #fff !important; 
 }
 
 .rounded {
@@ -176,3 +187,18 @@ body {
 	background-color: #fff;
 }
 
+@media (max-width: 980px) {
+  body {
+	padding-top: 0 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hidden-phone {
+    display: none !important;
+  }
+  
+  #archive {
+	margin-top: 30px !important;
+  }
+}
